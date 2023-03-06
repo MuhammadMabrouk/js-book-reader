@@ -1,0 +1,91 @@
+/*-----------------------------------------------------------------------------------------*/
+/* 1. Color Codes */
+/*-----------------------------------------------------------------------------------------*/
+
+:root {
+  /* primary color */
+  --primary-h: 15;
+  --primary-s: 100%;
+  --primary-l: 65%;
+  --primary-color: var(--primary-h), var(--primary-s), var(--primary-l);
+
+  /* secondary color */
+  --secondary-h: 57;
+  --secondary-s: 100%;
+  --secondary-l: 50%;
+  --secondary-a: 0.678;
+  --secondary-color: var(--secondary-h), var(--secondary-s), var(--secondary-l), var(--secondary-a);
+
+  /* light color */
+  --light-h: 0;
+  --light-s: 0%;
+  --light-l: 100%;
+  --light-color: var(--light-h), var(--light-s), var(--light-l);
+
+  /* warm color */
+  --warm-h: 42;
+  --warm-s: 56%;
+  --warm-l: 92%;
+  --warm-color: var(--warm-h), var(--warm-s), var(--warm-l);
+
+  /* dark color */
+  --dark-h: 0;
+  --dark-s: 0%;
+  --dark-l: 0%;
+  --dark-color: var(--dark-h), var(--dark-s), var(--dark-l);
+}
+
+// mode definitions
+[data-mode="light"] {
+  --main-color-one: var(--primary-color);
+  --main-color-two: var(--secondary-color);
+
+  --bg-color-one: var(--light-color);
+  --bg-color-two: var(--light-h), var(--light-s), calc(var(--light-l) - 4%);
+  --bg-color-three: var(--light-color);
+  --bg-color-reverse: var(--dark-color);
+
+  --t-color-one: var(--dark-color);
+  --t-color-two: var(--dark-h), var(--dark-s), var(--dark-l), 0.5;
+
+  --border-color: var(--dark-h), var(--dark-s), var(--dark-l), 0.2;
+
+  --card-shadow: 0 0 30px hsla(0, 0%, 0%, 0.2);
+  --drop-shadow: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.1));
+}
+
+[data-mode="warm"] {
+  --main-color-one: var(--primary-color);
+  --main-color-two: var(--secondary-color);
+
+  --bg-color-one: var(--warm-color);
+  --bg-color-two: var(--warm-h), calc(var(--warm-s) + 7%), calc(var(--warm-l) - 6%);
+  --bg-color-three: var(--warm-color);
+  --bg-color-reverse: var(--dark-color);
+
+  --t-color-one: var(--dark-color);
+  --t-color-two: var(--dark-h), var(--dark-s), var(--dark-l), 0.5;
+
+  --border-color: var(--dark-h), var(--dark-s), var(--dark-l), 0.2;
+
+  --card-shadow: 0 0 30px hsla(0, 0%, 0%, 0.2);
+  --drop-shadow: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.1));
+}
+
+[data-mode="dark"] {
+  --main-color-one: var(--primary-color);
+  --main-color-two: var(--secondary-color);
+
+  --bg-color-one: var(--dark-color);
+  --bg-color-two: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 7%);
+  --bg-color-three: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 20%);
+  --bg-color-reverse: var(--light-color);
+
+  --t-color-one: var(--light-color);
+  --t-color-two: var(--light-h), var(--light-s), var(--light-l), 0.5;
+
+  --border-color: var(--light-h), var(--light-s), var(--light-l), 0.2;
+
+  --card-shadow: 0 0 30px hsla(0, 0%, 0%, 0.2);
+  --drop-shadow: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.1));
+}

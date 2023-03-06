@@ -1,0 +1,28 @@
+<div class="footer__nav">
+
+  <!-- previous buttons -->
+  <button class="circle-btn" title="Previous Chapter" onclick="window._getPrevChapter(event)">
+    <i class="fa-solid fa-angles-left"></i>
+  </button>
+  <button class="circle-btn" title="Previous Page" onclick="window._getPrevPage(event)">
+    <i class="fa-solid fa-angle-left"></i>
+  </button>
+
+  <!-- info of chapters/pages -->
+  <span class="footer__nav__info">
+    <span>
+      <span class="footer__nav__curChapter">1</span>
+      (<span class="footer__nav__curPage">1</span> of <span class="footer__nav__totPages">0</span>)
+    </span>
+    /
+    <span class="footer__nav__totChapters">0</span>
+  </span>
+
+  <!-- next buttons -->
+  <button class="circle-btn" title="Next Page" onclick="window._getNextPage(event)">
+    <i class="fa-solid fa-angle-right"></i>
+  </button>
+  <button class="circle-btn" title="Next Chapter" onclick="window._getNextChapter(event)">
+    <i class="fa-solid fa-angles-right"></i>
+  </button>
+</div>

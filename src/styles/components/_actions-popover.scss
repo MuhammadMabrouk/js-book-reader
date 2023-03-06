@@ -1,0 +1,63 @@
+/* Actions Popover Styles */
+/*------------------------*/
+.actionsPopover {
+  position: absolute;
+  z-index: 1500;
+  transform: translate(-50%, -110%);
+  @include flexbox(flex, "", center, "", "", "");
+  gap: 0.0625rem;
+  min-width: max-content;
+  background-color: hsl(var(--border-color));
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  filter: var(--drop-shadow);
+  transition: opacity 0.1s ease-out;
+
+  &.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:not(.is-visible) {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    bottom: 0.0625rem;
+    height: 0.625rem;
+    width: 0.9375rem;
+    background-color: hsl(var(--bg-color-reverse));
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+
+  &__btn {
+    --alpha: 1;
+    background-color: hsl(var(--bg-color-reverse), var(--alpha));
+    color: hsl(var(--bg-color-one));
+    padding: 0.5rem 0.75rem 0.35rem;
+    border: 0;
+    cursor: pointer;
+
+    &:first-of-type,
+    &:nth-of-type(2) {
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    &:not([hidden]) {
+      display: block;
+    }
+
+    &:hover {
+      --alpha: 0.7;
+    }
+  }
+}

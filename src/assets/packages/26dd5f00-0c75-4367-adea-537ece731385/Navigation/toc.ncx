@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="ar">
+<head>
+<meta name="dtb:uid" content="48da139e-2698-4d66-904f-2d44ad82bba0"/>
+<meta name="dtb:depth" content="2"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>التحول الإيجابي</text>
+</docTitle>
+<navMap>
+<navPoint id="NavPoint-1" playOrder="1" class="5">
+<navLabel>
+<text>ثناءٌ على الكتاب‏</text>
+</navLabel>
+<content src="../Content/dedication-1-1.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-2" playOrder="2" class="7">
+<navLabel>
+<text>شكر وتقدير‏</text>
+</navLabel>
+<content src="../Content/acknowledgements-1-3.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-3" playOrder="3" class="8">
+<navLabel>
+<text>مقدمة‏</text>
+</navLabel>
+<content src="../Content/preface-1-4.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-4" playOrder="4" class="9">
+<navLabel>
+<text>الجزء الأول: اكتشاف الطريقة الإيجابية في التفكير‏</text>
+</navLabel>
+<content src="../Content/part-1-1.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-5" playOrder="5" class="10">
+<navLabel>
+<text>١ - لطريقة التفكير أهميتها‏</text>
+</navLabel>
+<content src="../Content/chapter-1-6.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-6" playOrder="6" class="11">
+<navLabel>
+<text>٢ - لماذا لا يُصاب الحمار الوحشي بقرحة المعدة: تأثير طريقة التفكير على الصحة‏</text>
+</navLabel>
+<content src="../Content/chapter-1-7.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-7" playOrder="7" class="12">
+<navLabel>
+<text>٣ - كبارُ السن حكماء وليسوا ضُعَفاء الذاكرة: طريقةُ التفكير تؤثِّر على الذاكرة‏</text>
+</navLabel>
+<content src="../Content/chapter-1-8.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-8" playOrder="8" class="13">
+<navLabel>
+<text>٤ - أسرارُ المعمَّرين: لطريقة التفكير تأثيرٌ على متوسط العمر‏</text>
+</navLabel>
+<content src="../Content/chapter-1-9.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-9" playOrder="9" class="14">
+<navLabel>
+<text>الجزء الثاني: فهْمُ طريقة التفكير‏</text>
+</navLabel>
+<content src="../Content/part-1-2.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-10" playOrder="10" class="15">
+<navLabel>
+<text>٥ - أنماط الشخصية لها أهميتها‏</text>
+</navLabel>
+<content src="../Content/chapter-1-11.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-11" playOrder="11" class="16">
+<navLabel>
+<text>٦ - «المقارنة سارقة البهجة»: للبيئة أهمية‏</text>
+</navLabel>
+<content src="../Content/chapter-1-12.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-12" playOrder="12" class="17">
+<navLabel>
+<text>٧ - تَقبل المحن: للصدمات أهمية‏</text>
+</navLabel>
+<content src="../Content/chapter-1-13.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-13" playOrder="13" class="18">
+<navLabel>
+<text>الجزء الثالث: تغيير طريقة التفكير‏</text>
+</navLabel>
+<content src="../Content/part-1-3.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-14" playOrder="14" class="19">
+<navLabel>
+<text>٨ - غيِّر سلوكك لتتغيَّر به طريقة تفكيرك‏</text>
+</navLabel>
+<content src="../Content/chapter-1-15.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-15" playOrder="15" class="20">
+<navLabel>
+<text>٩ - الطبيعة مفيدة للعقل والجسم‏</text>
+</navLabel>
+<content src="../Content/chapter-1-16.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-16" playOrder="16" class="21">
+<navLabel>
+<text>١٠ - أنفقِ النقود بحكمة: سافر في رحلة، شاهد مسرحية، اذهب إلى مباراة‏</text>
+</navLabel>
+<content src="../Content/chapter-1-17.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-17" playOrder="17" class="22">
+<navLabel>
+<text>١١ - قدِّم هديةً لأي شخص‏</text>
+</navLabel>
+<content src="../Content/chapter-1-18.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-18" playOrder="18" class="23">
+<navLabel>
+<text>١٢ - كوِّن علاقات: كلُّ ما تحتاجه هو الحب‏</text>
+</navLabel>
+<content src="../Content/chapter-1-19.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-19" playOrder="19" class="24">
+<navLabel>
+<text>الخاتمة‏</text>
+</navLabel>
+<content src="../Content/chapter-1-20.xhtml"/>
+</navPoint>
+<navPoint id="NavPoint-20" playOrder="20" class="25">
+<navLabel>
+<text>ملاحظات‏</text>
+</navLabel>
+<content src="../Content/chapter-1-21.xhtml"/>
+</navPoint>
+</navMap>
+</ncx>

@@ -1,0 +1,44 @@
+/* Ajax Loader Styles */
+/*--------------------*/
+.ajaxLoader {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(var(--bg-color-one));
+  display: none;
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(var(--bg-color-two));
+    box-shadow: var(--card-shadow);
+    padding: 0.1875rem;
+    border-radius: 50%;
+  }
+
+  &__blades {
+    display: block;
+    height: 1.8125rem;
+    width: 1.8125rem;
+    border-width: 0.1875rem;
+    border-style: solid;
+    border-color: transparent hsl(var(--main-color-one));
+    border-radius: 50%;
+    animation: spinner-left 0.6s linear infinite;
+  }
+}
+
+@keyframes spinner-left {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

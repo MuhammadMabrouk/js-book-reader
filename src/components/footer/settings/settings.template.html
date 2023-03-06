@@ -1,0 +1,74 @@
+<div class="footer__settings">
+
+  <!-- toggler button -->
+  <button class="circle-btn" title="Toggle Settings" onclick="window._toggleSettingsMenu(event)">
+    <i class="fa-solid fa-gear"></i>
+  </button>
+
+  <!-- settings menu -->
+  <div class="footer__settings__menu">
+    <div class="footer__settings__views">
+
+      <!-- controls view -->
+      <div class="footer__settings__controls">
+
+        <!-- font size control -->
+        <div class="footer__settings__fontSize">
+          <button class="footer__settings__fontSize__btn decrease__btn" data-action="decrease" onclick="window._changeAppFontsize(event)">──</button>
+          <button class="footer__settings__fontSize__btn reset__btn" data-action="reset" onclick="window._changeAppFontsize(event)">100%</button>
+          <button class="footer__settings__fontSize__btn increase__btn" data-action="increase" onclick="window._changeAppFontsize(event)">╋</button>
+        </div>
+
+        <!-- color mode control -->
+        <div class="footer__settings__colorMode">
+
+          <!-- control title -->
+          <label class="footer__settings__title">Color Mode</label>
+
+          <!-- colors list -->
+          <ul class="footer__settings__colorMode__list">
+            <li class="footer__settings__colorMode__item">
+              <button class="footer__settings__colorMode__btn light__btn" data-mode="light" onclick="window._changeAppMode(event)"></button>
+            </li>
+            <li class="footer__settings__colorMode__item">
+              <button class="footer__settings__colorMode__btn dark__btn" data-mode="dark" onclick="window._changeAppMode(event)"></button>
+            </li>
+            <li class="footer__settings__colorMode__item">
+              <button class="footer__settings__colorMode__btn warm__btn" data-mode="warm" onclick="window._changeAppMode(event)"></button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- font family control -->
+        <div class="footer__settings__fontFamily">
+
+          <!-- control title -->
+          <label class="footer__settings__title">Font</label>
+
+          <!-- selected font/open fonts -->
+          <button class="footer__settings__fontFamily__selected" onclick="window._toggleSettingsFontsMenu(event)">Noto Naskh Arabic</button>
+        </div>
+      </div>
+
+      <!-- fonts view -->
+      <div class="footer__settings__fonts">
+
+        <!-- close fonts button -->
+        <button class="footer__settings__fonts__close" onclick="window._toggleSettingsFontsMenu(event)">Back</button>
+
+        <!-- fonts list -->
+        <ul class="footer__settings__fonts__list">
+          <li class="footer__settings__fonts__item">
+            <button class="footer__settings__fonts__btn" data-font-family="NotoNaskhArabic" onclick="window._changeAppFontFamily(event)">Noto Naskh Arabic</button>
+          </li>
+          <li class="footer__settings__fonts__item">
+            <button class="footer__settings__fonts__btn" data-font-family="tahoma" onclick="window._changeAppFontFamily(event)">Tahoma</button>
+          </li>
+          <li class="footer__settings__fonts__item">
+            <button class="footer__settings__fonts__btn" data-font-family="arial" onclick="window._changeAppFontFamily(event)">Arial</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

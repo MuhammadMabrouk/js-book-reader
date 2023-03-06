@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------------------------------*/
+/* 2. Defaults, Resets & Global Styles */
+/*------------------------------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: hsl(var(--main-color-one));
+  color: hsl(var(--light-color));
+}
+
+html {
+  font-size: 1rem !important;
+  scroll-behavior: smooth;
+
+  body {
+    font-family: NotoNaskhArabic, sans-serif !important;
+    font-size: 1.125rem;
+    height: initial;
+    padding: initial;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.unicode-bidi-plaintext {
+  unicode-bidi: plaintext;
+}
+
+#app-inner {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(var(--bg-color-one));
+  color: hsl(var(--t-color-one));
+  line-height: 1.75;
+  padding: calc(var(--nav-height) * 0.825) calc(var(--nav-height) * 0.725)
+    calc(var(--nav-height) * 1.25);
+  overflow-x: hidden;
+}

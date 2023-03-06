@@ -1,0 +1,36 @@
+/* Book Viewer Styles */
+/*--------------------*/
+.bookViewer {
+  height: 100%;
+  overflow: hidden;
+
+  > div {
+    height: 100%;
+    column-gap: 3.5rem;
+    transition: transform 0.2s ease-out;
+
+    @media #{$min_992} {
+      column-count: 2;
+    }
+
+    @media #{$max_991} {
+      column-count: 1;
+    }
+
+    .blockquote,
+    .epigraph {
+      background-color: hsl(var(--bg-color-two));
+    }
+
+    .highlighted {
+      background-color: hsl(var(--main-color-two));
+      transition: background-color 0.3s;
+    }
+
+    .footnote {
+      &.active {
+        background-color: hsl(var(--main-color-two));
+      }
+    }
+  }
+}
