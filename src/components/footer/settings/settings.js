@@ -1,3 +1,4 @@
+import { getPagesCount } from "../../book-viewer/book-viewer.js";
 /*------------------------------------------------------------------------------------------*/
 /* Settings Component */
 /*------------------------------------------------------------------------------------------*/
@@ -165,6 +166,9 @@ export function changeAppFontsize(e) {
   applyAppSetting({ fontsize });
   saveAppSettings();
   setAppFontsize();
+
+  // update number of all pages
+  getPagesCount();
 }
 
 // set app font size
