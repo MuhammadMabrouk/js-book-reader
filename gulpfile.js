@@ -1,6 +1,5 @@
 // parallel() to run them at concurrency
-// watch() to watches changes to files and executes the task when a change occurs
-const { parallel, watch } = require("gulp");
+const { parallel } = require("gulp");
 
 // plugin for webserver & LiveReload
 const connect = require("gulp-connect");
@@ -9,7 +8,7 @@ const connect = require("gulp-connect");
 const { htmlFiles }         = require("./gulp/tasks/htmlFiles");
 const { cssMain }           = require("./gulp/tasks/cssMain");
 const { cssLibraries }      = require("./gulp/tasks/cssLibraries");
-const { jsMain }            = require("./gulp/tasks/jsMain");
+const { jsBundle }          = require("./gulp/tasks/jsBundle");
 const { assetsFiles }       = require("./gulp/tasks/assetsFiles");
 const { assetsImages }      = require("./gulp/tasks/assetsImages");
 const { assetsFontAwesome } = require("./gulp/tasks/assetsFontAwesome");
@@ -37,8 +36,8 @@ const watcher = (cb) => {
   // css libraries task
   watchTasks(cssLibraries);
 
-  // main js task
-  watchTasks(jsMain);
+  // js bundle task
+  watchTasks(jsBundle);
 
   // assets files task
   watchTasks(assetsFiles);
@@ -57,7 +56,7 @@ module.exports = {
   htmlFiles: htmlFiles.htmlFiles,
   cssMain: cssMain.cssMain,
   cssLibraries: cssLibraries.cssLibraries,
-  jsMain: jsMain.jsMain,
+  jsBundle: jsBundle.jsBundle,
   assetsImages: assetsImages.assetsImages,
   assetsFiles: assetsFiles.assetsFiles,
   assetsFontAwesome: assetsFontAwesome.assetsFontAwesome,

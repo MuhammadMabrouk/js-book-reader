@@ -3,20 +3,20 @@ import {
   changeAppMode,
   changeAppFontFamily,
   changeAppFontsize,
-} from "./components/settings.js";
+} from "../components/footer/settings/settings.js";
 import {
   initAppChapters,
   getNextChapter,
   getPrevChapter,
   getNextPage,
   getPrevPage,
-} from "./components/book-viewer.js";
+} from "../components/book-viewer/book-viewer.js";
 import {
   toggleFooterVisibility,
   toggleSettingsMenu,
   toggleSettingsFontsMenu,
   toggleTOCMenu,
-} from "./components/footer.js";
+} from "../components/footer/footer.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // get the app settings from the localStorage

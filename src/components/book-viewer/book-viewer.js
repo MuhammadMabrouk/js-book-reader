@@ -1,6 +1,5 @@
-import { startAjaxLoading, stopAjaxLoading } from "./ajax-loader.js";
-import { updateProgressPercentage } from "./footer.js";
-import { initActionsPopover } from "./actions-popover.js";
+import { startAjaxLoading, stopAjaxLoading } from "../ajax-loader/ajax-loader.js";
+import { initActionsPopover } from "../actions-popover/actions-popover.js";
 /*------------------------------------------------------------------------------------------*/
 /* Book Viewer Component */
 /*------------------------------------------------------------------------------------------*/
@@ -344,4 +343,20 @@ function extractURLFilename() {
   } else {
     return null;
   }
+}
+
+// update progress percentage
+function updateProgressPercentage() {
+  const footerEl = document.querySelector(".footer");
+  const fullWidth = footerEl.clientWidth;
+  const chapterPartWidth = fullWidth / chaptersCount;
+  const chaptersProgress = chapterPartWidth * currentChapter;
+  const pagePartWidth = chapterPartWidth / pagesCount;
+  const pagesProgress = pagePartWidth * currentPage;
+  const percentage = Math.min(
+    ((chaptersProgress + pagesProgress) / fullWidth) * 100,
+    100
+  );
+
+  footerEl.style.setProperty("--progress-percentage", `${percentage}%`);
 }
