@@ -149,7 +149,7 @@ function updateCurrentPage(action) {
 }
 
 // get number of all pages
-function getPagesCount() {
+export function getPagesCount() {
   const wrapper = bookViewerEl.children[0];
   const count = Math.round(wrapper.scrollWidth / wrapper.clientWidth);
   const totPagesNumEl = document.querySelector(".footer__nav__totPages");
