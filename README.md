@@ -3,4 +3,4 @@ Book reader app in vanilla JavaScript.
 
 Created on: March 2023
 
-[Live Preview](https://book-reader.webrouk.com/)
+[Live Preview](http://book-reader.webrouk.com/)
